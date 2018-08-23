@@ -1,0 +1,34 @@
+{
+  "name": "web3prj",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.8.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "react-scripts-ts": "2.17.0",
+    "redux": "^4.0.0",
+    "typesafe-actions": "^2.0.4"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject",
+    "ethserve": "mkdir -p ganachedb && ganache-cli --db ganachedb --account=\"0xbfe038810d51b8a788e5f63d2a0822d1f8ef712a7acbbf9877013efb3c5f5514,100000000000000000000\"  --account=\"0xb07210851b10f884f5b4e57a8e76e717cc5cd9b496801cb93dac380747239b0f,100000000000000000000\"   --account=\"0x46c855cb4a30c5630b5884fde176fe6d4b2c26f12c8607452c72ca31c537120e,100000000000000000000\"",
+    "deploysm": "node ./smartcontracts/smscript.js"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "@types/node": "^10.7.1",
+    "@types/react": "^16.4.11",
+    "@types/react-dom": "^16.0.7",
+    "@types/react-redux": "^6.0.6",
+    "@types/web3": "^1.0.3",
+    "ganache-cli": "^6.1.8",
+    "solc": "^0.4.24",
+    "typescript": "^3.0.1",
+    "web3": "^1.0.0-beta.35"
+  }
+}
